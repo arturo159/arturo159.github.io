@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Videojuegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1d1d1d;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 20px;
+            margin: 10px 0 0;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        .acerca-de {
+            background-color: #ffffff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 900px;
+            border-radius: 8px;
+        }
+
+        .acerca-de h2 {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .acerca-de p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .acerca-de img {
+            width: 100%;
+            max-width: 700px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .servicios ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .servicios li {
+            background-color: #333;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .formulario input, .formulario textarea {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            width: 100%;
+        }
+
+        .formulario button {
+            padding: 12px;
+            font-size: 18px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .formulario button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            background-color: #1d1d1d;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Estilos para las secciones interactivas */
+        .accordion {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .accordion:hover {
+            background-color: #555;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: #f1f1f1;
+            overflow: hidden;
+            border-left: 3px solid #28a745;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Videojuegos Innovadores</h1>
+        <p>Creando experiencias únicas para los jugadores del futuro</p>
+    </header>
+
+    <section class="acerca-de">
+        <h2>Acerca de Nosotros</h2>
+        <p>En nuestra empresa, desarrollamos videojuegos con pasión y creatividad, buscando siempre la innovación y la calidad. Nos especializamos en ofrecer experiencias únicas a través de la interacción, la historia y la tecnología.</p>
+        
+        <img src="https://via.placeholder.com/700x400.png?text=Desarrollo+de+Videojuegos" alt="Imagen relacionada con el desarrollo de videojuegos">
+
+        <div class="servicios">
+            <h3>Servicios</h3>
+            <ul>
+                <li>Desarrollo de Videojuegos</li>
+                <li>Consultoría de Proyectos de Videojuegos</li>
+                <li>Soporte y Actualizaciones</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Zonas interactivas con información adicional -->
+    <section>
+        <h2>Descubre más sobre nuestra empresa</h2>
+        
+        <button class="accordion">Nuestra Historia</button>
+        <div class="panel">
+            <p>Fundada en 2010, Videojuegos Innovadores comenzó como un pequeño estudio con la visión de revolucionar la industria del videojuego. Desde sus inicios, hemos crecido hasta convertirnos en un referente en la creación de videojuegos inmersivos, desarrollando títulos que han sido aclamados por críticos y jugadores por igual.</p>
+        </div>
+
+        <button class="accordion">Nuestra Misión</button>
+        <div class="panel">
+            <p>Nos comprometemos a crear experiencias únicas que no solo entretienen, sino que también educan y conectan a las personas a través de mundos virtuales. Buscamos que cada uno de nuestros juegos inspire a la creatividad y la imaginación.</p>
+        </div>
+
+        <button class="accordion">Proyectos Destacados</button>
+        <div class="panel">
+            <p>Algunos de nuestros proyectos más destacados incluyen:</p>
+            <ul>
+                <li><strong>Battle Realms X:</strong> Un juego de acción y estrategia con gráficos realistas y una jugabilidad dinámica.</li>
+                <li><strong>CyberQuest:</strong> Un juego de rol de ciencia ficción que lleva a los jugadores a un futuro distópico donde cada elección tiene consecuencias.</li>
+                <li><strong>Pixel Adventures:</strong> Un juego indie de plataformas con estética retro que ha sido muy popular entre los jugadores de todas las edades.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="formulario">
+            <h2>Contáctanos</h2>
+            <form action="#">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu email" required>
+                <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Videojuegos Innovadores | Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        // Script para las zonas interactivas (accordion)
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
